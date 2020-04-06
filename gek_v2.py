@@ -84,21 +84,27 @@ if __name__ == '__main__':
 
     # ------------------------------------------------------------------------------------------------------------------
     # initialize state variables: phi_hat
+    # ref: https://apmonitor.com/do/uploads/Main/estimate_hiv.zip
     # ------------------------------------------------------------------------------------------------------------------
 
-    phi_hat = [m.SV(value=phi_0[i]) for i in range(ngrid)]
-    m.phi_hat = m.CV(value=phi)  # fit to measurement phi obtained from 'def actual'
-    m.phi_hat.FSTATUS = 1
+    phi_hat = [m.CV(value=phi_0[i]) for i in range(ngrid)]  # initialize phi_hat; variable to match with measurement
+
+    for i in range(ngrid):
+        phi_hat[i].FSTATUS = 1  # fit to measurement phi obtained from 'def actual'
+        phi_hat[i].STATUS = 1  # build objective function to match measurement and prediction
+        phi_hat[i].value = phi[:, i]
 
     # ------------------------------------------------------------------------------------------------------------------
     # parameters (/control parameters to be optimized while minimizing the cost function in GEKKO)
     # ref: http://apmonitor.com/do/index.php/Main/DynamicEstimation
+    # ref: https://apmonitor.com/do/index.php/Main/EstimatorObjective
     # def model
     # ------------------------------------------------------------------------------------------------------------------
-
+    #  Manually enter guesses for parameters
     Dhat0 = 5000*np.ones(ngrid-1)
     Dhat = [m.FV(value=Dhat0[i]) for i in range(0, ngrid-1)]
-    # Dhat.STATUS = 1  # adjustable parameter
+    for i in range(ngrid-1):
+        Dhat[i].STATUS = 1  # Allow optimizer to fit these values
 
     # ------------------------------------------------------------------------------------------------------------------
     # differential equations
@@ -126,7 +132,7 @@ if __name__ == '__main__':
     m.options.EV_TYPE = 2  # squared-error :minimize model prediction to measurement
     m.solve()
 
-
+    """
     # plot results
     plt.figure()
     tm = m.time*60.0
@@ -135,3 +141,4 @@ if __name__ == '__main__':
     plt.xlabel('Time (s)')
     plt.xlim([0, 50])
     plt.show()
+    """
