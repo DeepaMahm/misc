@@ -1,7 +1,7 @@
 """
 - computing quantification results of a network model
-- created by Deepa Maheshvare
-- Indian Institute of Science
+- created by Deepa 
+- deepam(at)iisc(dot)ac(dot)in
 - 25/06/2020
 """
 
