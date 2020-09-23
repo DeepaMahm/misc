@@ -134,7 +134,7 @@ if __name__ == '__main__':
     # p.Execute()
 
     reader = vmtkscripts.vmtkSurfaceReader()
-    reader.InputFileName = 'islet_clipped.vtp'
+    reader.InputFileName = 'surface_clipped.vtp'
     reader.Execute()
 
     # network extraction
