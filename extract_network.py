@@ -124,9 +124,9 @@ def get_coordinates(networkExtraction):
 
 if __name__ == '__main__':
 
-    # previous input: LN1_crop1.stl islet.stl
+    
     # cut open
-    # vmtkCommand = '''vmtksurfaceclipper -ifile islet.stl -ofile islet_clipped.vtp '''
+    # vmtkCommand = '''vmtksurfaceclipper -ifile file.stl -ofile surface_clipped.vtp '''
     #
     # p = pypes.Pype()
     # p.SetArgumentsString(vmtkCommand)
