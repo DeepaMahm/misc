@@ -17,9 +17,6 @@ from vmtk import vmtkscripts
 from vtk.util.numpy_support import vtk_to_numpy
 from collections import OrderedDict
 from typing import List
-from matpancreas.settings_model import RESULTS_DIR
-from matpancreas.utils.io_utils_py import write_output
-from matpancreas.utils.graph_utils_py import plot_histogram
 
 
 def write_ploydata_output(surface, file: str) -> None:
@@ -155,4 +152,4 @@ if __name__ == '__main__':
     # generate ployData: radii
     g['r'] = extract_segment_radius(networkExtraction=networkExtraction)
 
-    write_output(d={'graph': g, 'pos': pos}, file='data_vmtk')
+    
