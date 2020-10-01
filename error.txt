@@ -1,0 +1,623 @@
+ ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-l6mks22t/networkit/setup.py'"'"'; __file__='"'"'/tmp/pip-install-l6mks22t/networkit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-9sqkfg_9/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/deepa/.local/include/python3.7m/networkit
+         cwd: /tmp/pip-install-l6mks22t/networkit/
+    Complete output (616 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.7
+    creating build/lib.linux-x86_64-3.7/networkit
+    copying networkit/GEXFIO.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/GraphMLIO.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/__init__.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/algebraic.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/coloring.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/dynamic.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/exceptions.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/nxadapter.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/partitioning.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/plot.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/sampling.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/stopwatch.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/support.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/viztasks.py -> build/lib.linux-x86_64-3.7/networkit
+    copying networkit/workflows.py -> build/lib.linux-x86_64-3.7/networkit
+    creating build/lib.linux-x86_64-3.7/networkit/gephi
+    copying networkit/gephi/__init__.py -> build/lib.linux-x86_64-3.7/networkit/gephi
+    copying networkit/gephi/csv.py -> build/lib.linux-x86_64-3.7/networkit/gephi
+    copying networkit/gephi/pyclient.py -> build/lib.linux-x86_64-3.7/networkit/gephi
+    copying networkit/gephi/streaming.py -> build/lib.linux-x86_64-3.7/networkit/gephi
+    creating build/lib.linux-x86_64-3.7/networkit/profiling
+    copying networkit/profiling/__init__.py -> build/lib.linux-x86_64-3.7/networkit/profiling
+    copying networkit/profiling/job.py -> build/lib.linux-x86_64-3.7/networkit/profiling
+    copying networkit/profiling/multiprocessing_helper.py -> build/lib.linux-x86_64-3.7/networkit/profiling
+    copying networkit/profiling/plot.py -> build/lib.linux-x86_64-3.7/networkit/profiling
+    copying networkit/profiling/profiling.py -> build/lib.linux-x86_64-3.7/networkit/profiling
+    creating build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/__init__.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_algorithms.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_community.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_generators.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_graph.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_graph_traversal.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_graphio.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_graphtools.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_randomization.py -> build/lib.linux-x86_64-3.7/networkit/test
+    copying networkit/test/test_sparsification.py -> build/lib.linux-x86_64-3.7/networkit/test
+    creating build/lib.linux-x86_64-3.7/networkit/test/extension
+    copying networkit/test/extension/__init__.py -> build/lib.linux-x86_64-3.7/networkit/test/extension
+    copying networkit/test/extension/test.py -> build/lib.linux-x86_64-3.7/networkit/test/extension
+    creating build/lib.linux-x86_64-3.7/networkit/test/gephi
+    copying networkit/test/gephi/__init__.py -> build/lib.linux-x86_64-3.7/networkit/test/gephi
+    creating build/lib.linux-x86_64-3.7/networkit/profiling/html
+    copying networkit/profiling/html/measure.html -> build/lib.linux-x86_64-3.7/networkit/profiling/html
+    copying networkit/profiling/html/overlay.html -> build/lib.linux-x86_64-3.7/networkit/profiling/html
+    copying networkit/profiling/html/profile.html -> build/lib.linux-x86_64-3.7/networkit/profiling/html
+    copying networkit/profiling/html/profiling.css -> build/lib.linux-x86_64-3.7/networkit/profiling/html
+    copying networkit/profiling/html/profiling.js -> build/lib.linux-x86_64-3.7/networkit/profiling/html
+    creating build/lib.linux-x86_64-3.7/networkit/profiling/latex
+    copying networkit/profiling/latex/measure.tex -> build/lib.linux-x86_64-3.7/networkit/profiling/latex
+    copying networkit/profiling/latex/profile.tex -> build/lib.linux-x86_64-3.7/networkit/profiling/latex
+    creating build/lib.linux-x86_64-3.7/networkit/profiling/description
+    copying networkit/profiling/description/descriptions.txt -> build/lib.linux-x86_64-3.7/networkit/profiling/description
+    running build_ext
+    initializing NetworKit compilation with: 'cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/tmp/pip-install-l6mks22t/networkit/build/lib.linux-x86_64-3.7 -DCMAKE_CXX_COMPILER=g++ -DNETWORKIT_FLATINSTALL=ON -DNETWORKIT_PYTHON=/usr/include/python3.7m -DNETWORKIT_PYTHON_SOABI=cpython-37m-x86_64-linux-gnu /tmp/pip-install-l6mks22t/networkit'
+    -- The CXX compiler identification is GNU 5.4.0
+    -- Detecting CXX compiler ABI info
+    -- Detecting CXX compiler ABI info - done
+    -- Check for working CXX compiler: /usr/bin/g++ - skipped
+    -- Detecting CXX compile features
+    -- Detecting CXX compile features - done
+    -- Found OpenMP_CXX: -fopenmp (found version "4.0")
+    -- Found OpenMP: TRUE (found version "4.0")
+    -- The C compiler identification is GNU 5.4.0
+    -- Detecting C compiler ABI info
+    -- Detecting C compiler ABI info - done
+    -- Check for working C compiler: /usr/bin/cc - skipped
+    -- Detecting C compile features
+    -- Detecting C compile features - done
+    -- Performing Test TLX_CXX_HAS_CXX17
+    -- Performing Test TLX_CXX_HAS_CXX17 - Success
+    -- TLX CMAKE_CXX_FLAGS: -Wshadow -Wold-style-cast -std=c++17 -g -W -Wall -Wextra -fPIC  -Wcast-qual -Winit-self -Wnoexcept -Woverloaded-virtual -Wredundant-decls
+    -- Looking for pthread.h
+    -- Looking for pthread.h - found
+    -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+    -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+    -- Looking for pthread_create in pthreads
+    -- Looking for pthread_create in pthreads - not found
+    -- Looking for pthread_create in pthread
+    -- Looking for pthread_create in pthread - found
+    -- Found Threads: TRUE
+    -- sphinx-build not found. Disable documentation targets
+    -- Configuring done
+    -- Generating done
+    -- Build files have been written to: /tmp/pip-install-l6mks22t/networkit/build/build_python
+    Build with: 'make install -j4'
+    Scanning dependencies of target tlx
+    [  0%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/algorithm/parallel_multiway_merge.cpp.o
+    [  0%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/backtrace.cpp.o
+    [  1%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/cmdline_parser.cpp.o
+    [  1%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/die/core.cpp.o
+    [  1%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/digest/md5.cpp.o
+    [  1%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/digest/sha1.cpp.o
+    [  2%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/digest/sha256.cpp.o
+    [  2%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/digest/sha512.cpp.o
+    [  2%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/logger/core.cpp.o
+    [  2%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/multi_timer.cpp.o
+    [  3%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/port/setenv.cpp.o
+    [  3%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/appendline.cpp.o
+    [  3%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/base64.cpp.o
+    [  4%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/bitdump.cpp.o
+    [  4%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/compare_icase.cpp.o
+    [  4%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/contains.cpp.o
+    [  4%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/contains_word.cpp.o
+    [  5%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/ends_with.cpp.o
+    [  5%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/equal_icase.cpp.o
+    [  5%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/erase_all.cpp.o
+    [  6%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/escape_html.cpp.o
+    [  6%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/escape_uri.cpp.o
+    [  6%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/expand_environment_variables.cpp.o
+    [  6%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/extract_between.cpp.o
+    [  7%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/format_si_iec_units.cpp.o
+    [  7%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/hexdump.cpp.o
+    [  7%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/index_of.cpp.o
+    [  7%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/join.cpp.o
+    [  8%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/join_quoted.cpp.o
+    [  8%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/less_icase.cpp.o
+    [  8%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/pad.cpp.o
+    [  9%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/parse_si_iec_units.cpp.o
+    [  9%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/replace.cpp.o
+    [  9%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/split.cpp.o
+    [  9%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/split_quoted.cpp.o
+    [ 10%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/split_words.cpp.o
+    [ 10%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/ssprintf.cpp.o
+    [ 10%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/starts_with.cpp.o
+    [ 10%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/to_lower.cpp.o
+    [ 11%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/to_upper.cpp.o
+    [ 11%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/trim.cpp.o
+    [ 11%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/union_words.cpp.o
+    [ 12%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/string/word_wrap.cpp.o
+    [ 12%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/thread_pool.cpp.o
+    [ 12%] Building CXX object extlibs/tlx/tlx/CMakeFiles/tlx.dir/timestamp.cpp.o
+    [ 12%] Linking CXX static library libtlx.a
+    [ 12%] Built target tlx
+    Scanning dependencies of target networkit
+    [ 12%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/networkit.cpp.o
+    [ 12%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/algebraic/CSRMatrix.cpp.o
+    [ 12%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/algebraic/DenseMatrix.cpp.o
+    [ 13%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/algebraic/DynamicMatrix.cpp.o
+    [ 13%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/algebraic/Vector.cpp.o
+    [ 13%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/BloomFilter.cpp.o
+    [ 13%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/BucketPQ.cpp.o
+    [ 14%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/Log.cpp.o
+    [ 14%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/NumericTools.cpp.o
+    [ 14%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/Parallelism.cpp.o
+    [ 15%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/Random.cpp.o
+    [ 15%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/SignalHandling.cpp.o
+    [ 15%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/auxiliary/Timer.cpp.o
+    [ 15%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/base/Algorithm.cpp.o
+    [ 16%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/ApproxBetweenness.cpp.o
+    [ 16%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/ApproxCloseness.cpp.o
+    [ 16%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/ApproxGroupBetweenness.cpp.o
+    [ 16%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/ApproxSpanningEdge.cpp.o
+    [ 17%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/Betweenness.cpp.o
+    [ 17%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/Centrality.cpp.o
+    [ 17%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/Closeness.cpp.o
+    [ 18%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/CoreDecomposition.cpp.o
+    [ 18%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/DegreeCentrality.cpp.o
+    [ 18%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/DynApproxBetweenness.cpp.o
+    [ 18%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/DynBetweenness.cpp.o
+    [ 19%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/DynBetweennessOneNode.cpp.o
+    [ 19%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/DynKatzCentrality.cpp.o
+    [ 19%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/DynTopHarmonicCloseness.cpp.o
+    [ 20%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/EigenvectorCentrality.cpp.o
+    [ 20%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/EstimateBetweenness.cpp.o
+    [ 20%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/GedWalk.cpp.o
+    [ 20%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/GroupCloseness.cpp.o
+    [ 21%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/GroupDegree.cpp.o
+    [ 21%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/HarmonicCloseness.cpp.o
+    [ 21%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/KadabraBetweenness.cpp.o
+    [ 21%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/KatzCentrality.cpp.o
+    [ 22%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/KPathCentrality.cpp.o
+    [ 22%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/LaplacianCentrality.cpp.o
+    [ 22%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/LocalClusteringCoefficient.cpp.o
+    [ 23%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/LocalPartitionCoverage.cpp.o
+    [ 23%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/PageRank.cpp.o
+    [ 23%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/PermanenceCentrality.cpp.o
+    [ 23%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/Sfigality.cpp.o
+    [ 24%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/SpanningEdgeCentrality.cpp.o
+    [ 24%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/TopCloseness.cpp.o
+    [ 24%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/centrality/TopHarmonicCloseness.cpp.o
+    [ 24%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/clique/MaximalCliques.cpp.o
+    [ 25%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/coarsening/ClusteringProjector.cpp.o
+    [ 25%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/coarsening/GraphCoarsening.cpp.o
+    [ 25%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/coarsening/MatchingCoarsening.cpp.o
+    [ 26%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/coarsening/ParallelPartitionCoarsening.cpp.o
+    [ 26%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/AdjustedRandMeasure.cpp.o
+    [ 26%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/ClusteringGenerator.cpp.o
+    [ 26%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/CommunityDetectionAlgorithm.cpp.o
+    [ 27%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/Conductance.cpp.o
+    [ 27%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/CoverHubDominance.cpp.o
+    [ 27%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/CoverF1Similarity.cpp.o
+    [ 27%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/Coverage.cpp.o
+    [ 28%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/CutClustering.cpp.o
+    [ 28%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/DissimilarityMeasure.cpp.o
+    [ 28%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/DynamicNMIDistance.cpp.o
+    [ 29%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/EdgeCut.cpp.o
+    [ 29%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/GraphClusteringTools.cpp.o
+    [ 29%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/GraphStructuralRandMeasure.cpp.o
+    [ 29%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/HubDominance.cpp.o
+    [ 30%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/IntrapartitionDensity.cpp.o
+    [ 30%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/IsolatedInterpartitionConductance.cpp.o
+    [ 30%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/IsolatedInterpartitionExpansion.cpp.o
+    [ 31%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/JaccardMeasure.cpp.o
+    [ 31%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/LPDegreeOrdered.cpp.o
+    [ 31%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/LocalCoverEvaluation.cpp.o
+    [ 31%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/LocalPartitionEvaluation.cpp.o
+    [ 32%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/Modularity.cpp.o
+    [ 32%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/NMIDistance.cpp.o
+    [ 32%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/NodeStructuralRandMeasure.cpp.o
+    [ 32%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/PLM.cpp.o
+    [ 33%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/PLP.cpp.o
+    [ 33%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/ParallelAgglomerativeClusterer.cpp.o
+    [ 33%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/PartitionFragmentation.cpp.o
+    [ 34%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/PartitionHubDominance.cpp.o
+    [ 34%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/PartitionIntersection.cpp.o
+    [ 34%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/SampledGraphStructuralRandMeasure.cpp.o
+    [ 34%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/SampledNodeStructuralRandMeasure.cpp.o
+    [ 35%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/community/StablePartitionNodes.cpp.o
+    [ 35%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/BiconnectedComponents.cpp.o
+    [ 35%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/ConnectedComponents.cpp.o
+    [ 35%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/DynConnectedComponents.cpp.o
+    [ 36%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/DynWeaklyConnectedComponents.cpp.o
+    [ 36%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/ParallelConnectedComponents.cpp.o
+    [ 36%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/RandomSpanningForest.cpp.o
+    [ 37%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/StronglyConnectedComponents.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/components/StronglyConnectedComponents.cpp: In member function ‘virtual void NetworKit::StronglyConnectedComponents::run()’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/components/StronglyConnectedComponents.cpp:35:9: warning: ‘void NetworKit::StronglyConnectedComponents::runRecursively()’ is deprecated [-Wdeprecated-declarations]
+             runRecursively();
+             ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/components/StronglyConnectedComponents.hpp:20,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/components/StronglyConnectedComponents.cpp:16:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/components/StronglyConnectedComponents.hpp:70:25: note: declared here
+         void TLX_DEPRECATED(runRecursively());
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/components/StronglyConnectedComponents.cpp:35:24: warning: ‘void NetworKit::StronglyConnectedComponents::runRecursively()’ is deprecated [-Wdeprecated-declarations]
+             runRecursively();
+                            ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/components/StronglyConnectedComponents.hpp:20,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/components/StronglyConnectedComponents.cpp:16:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/components/StronglyConnectedComponents.hpp:70:25: note: declared here
+         void TLX_DEPRECATED(runRecursively());
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 37%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/components/WeaklyConnectedComponents.cpp.o
+    [ 37%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/correlation/Assortativity.cpp.o
+    [ 37%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/AffectedNodes.cpp.o
+    [ 38%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/APSP.cpp.o
+    [ 38%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/AdamicAdarDistance.cpp.o
+    [ 38%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/AlgebraicDistance.cpp.o
+    [ 39%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/AllSimplePaths.cpp.o
+    [ 39%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/BFS.cpp.o
+    [ 39%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/BidirectionalBFS.cpp.o
+    [ 39%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/BidirectionalDijkstra.cpp.o
+    [ 40%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/CommuteTimeDistance.cpp.o
+    [ 40%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/Diameter.cpp.o
+    [ 40%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/Dijkstra.cpp.o
+    [ 40%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/Eccentricity.cpp.o
+    [ 41%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/EffectiveDiameter.cpp.o
+    [ 41%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/EffectiveDiameterApproximation.cpp.o
+    [ 41%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/GraphDistance.cpp.o
+    [ 42%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/HopPlotApproximation.cpp.o
+    [ 42%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/IncompleteDijkstra.cpp.o
+    [ 42%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/JaccardDistance.cpp.o
+    [ 42%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/NeighborhoodFunction.cpp.o
+    [ 43%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/NeighborhoodFunctionApproximation.cpp.o
+    [ 43%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/NeighborhoodFunctionHeuristic.cpp.o
+    [ 43%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/ReverseBFS.cpp.o
+    [ 43%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/SSSP.cpp.o
+    [ 44%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/Volume.cpp.o
+    [ 44%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/DynAPSP.cpp.o
+    [ 44%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/DynBFS.cpp.o
+    [ 45%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/DynDijkstra.cpp.o
+    [ 45%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/distance/DynSSSP.cpp.o
+    [ 45%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/dynamics/DGSStreamParser.cpp.o
+    [ 45%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/dynamics/DGSWriter.cpp.o
+    [ 46%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/dynamics/GraphDifference.cpp.o
+    [ 46%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/dynamics/GraphEvent.cpp.o
+    [ 46%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/dynamics/GraphEventProxy.cpp.o
+    [ 47%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/dynamics/GraphUpdater.cpp.o
+    [ 47%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/ChibaNishizekiQuadrangleEdgeScore.cpp.o
+    [ 47%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/ChibaNishizekiTriangleEdgeScore.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/dynamics/GraphEventProxy.cpp: In member function ‘void NetworKit::GraphEventProxy::timeStep()’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/dynamics/GraphEventProxy.cpp:74:23: warning: ‘void NetworKit::Graph::timeStep()’ is deprecated [-Wdeprecated-declarations]
+         this->G->timeStep();
+                           ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:11:0,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/dynamics/GraphEventProxy.cpp:9:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:1615:25: note: declared here
+         void TLX_DEPRECATED(timeStep()) {
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 47%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/EdgeScore.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/dynamics/GraphUpdater.cpp: In member function ‘void NetworKit::GraphUpdater::update(const std::vector<NetworKit::GraphEvent>&)’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/dynamics/GraphUpdater.cpp:48:29: warning: ‘void NetworKit::Graph::timeStep()’ is deprecated [-Wdeprecated-declarations]
+                     G->timeStep();
+                                 ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEvent.hpp:11,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphUpdater.hpp:11,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/dynamics/GraphUpdater.cpp:9:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:1615:25: note: declared here
+         void TLX_DEPRECATED(timeStep()) {
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 48%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/EdgeScoreAsWeight.cpp.o
+    [ 48%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/EdgeScoreBlender.cpp.o
+    [ 48%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/EdgeScoreLinearizer.cpp.o
+    [ 48%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/EdgeScoreNormalizer.cpp.o
+    [ 49%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/GeometricMeanScore.cpp.o
+    [ 49%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/PrefixJaccardScore.cpp.o
+    [ 49%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/edgescores/TriangleEdgeScore.cpp.o
+    [ 50%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/flow/EdmondsKarp.cpp.o
+    [ 50%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/BarabasiAlbertGenerator.cpp.o
+    [ 50%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/ChungLuGenerator.cpp.o
+    [ 50%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/ClusteredRandomGraphGenerator.cpp.o
+    [ 51%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DorogovtsevMendesGenerator.cpp.o
+    [ 51%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicBarabasiAlbertGenerator.cpp.o
+    [ 51%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicDGSParser.cpp.o
+    [ 51%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicDorogovtsevMendesGenerator.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicBarabasiAlbertGenerator.cpp: In member function ‘virtual void NetworKit::DynamicBarabasiAlbertGenerator::generate()’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicBarabasiAlbertGenerator.cpp:76:28: warning: ‘void NetworKit::GraphEventProxy::timeStep()’ is deprecated [-Wdeprecated-declarations]
+         this->Gproxy->timeStep(); // trigger a time step
+                                ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:11:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/generators/DynamicGraphSource.hpp:13,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/generators/DynamicBarabasiAlbertGenerator.hpp:13,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicBarabasiAlbertGenerator.cpp:9:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:54:25: note: declared here
+         void TLX_DEPRECATED(timeStep());
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 52%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicForestFireGenerator.cpp.o
+    [ 52%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicGraphSource.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicDGSParser.cpp: In member function ‘virtual void NetworKit::DynamicDGSParser::generate()’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicDGSParser.cpp:64:30: warning: ‘void NetworKit::GraphEventProxy::timeStep()’ is deprecated [-Wdeprecated-declarations]
+                 Gproxy->timeStep();
+                                  ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:11:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/generators/DynamicGraphSource.hpp:13,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/generators/DynamicDGSParser.hpp:17,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicDGSParser.cpp:12:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:54:25: note: declared here
+         void TLX_DEPRECATED(timeStep());
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 52%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicHyperbolicGenerator.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicGraphSource.cpp: In member function ‘virtual void NetworKit::DynamicGraphSource::generateTimeSteps(NetworKit::count)’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicGraphSource.cpp:43:20: warning: ‘NetworKit::count NetworKit::Graph::time()’ is deprecated [-Wdeprecated-declarations]
+         while (G->time() < t) {
+                        ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:11:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/generators/DynamicGraphSource.hpp:13,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/generators/DynamicGraphSource.cpp:8:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:1626:26: note: declared here
+         count TLX_DEPRECATED(time()) {
+                              ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 53%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicPathGenerator.cpp.o
+    [ 53%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/DynamicPubWebGenerator.cpp.o
+    [ 53%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/EdgeSwitchingMarkovChainGenerator.cpp.o
+    [ 53%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/ErdosRenyiGenerator.cpp.o
+    [ 54%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/HavelHakimiGenerator.cpp.o
+    [ 54%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/HyperbolicGenerator.cpp.o
+    [ 54%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/LFRGenerator.cpp.o
+    [ 54%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/MocnikGenerator.cpp.o
+    [ 55%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/MocnikGeneratorBasic.cpp.o
+    [ 55%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/PowerlawDegreeSequence.cpp.o
+    [ 55%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/PubWebGenerator.cpp.o
+    [ 56%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/RegularRingLatticeGenerator.cpp.o
+    [ 56%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/RmatGenerator.cpp.o
+    [ 56%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/StaticDegreeSequenceGenerator.cpp.o
+    [ 56%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/StochasticBlockmodel.cpp.o
+    [ 57%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/generators/WattsStrogatzGenerator.cpp.o
+    [ 57%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/geometric/HyperbolicSpace.cpp.o
+    [ 57%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/global/ClusteringCoefficient.cpp.o
+    [ 58%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/global/GlobalClusteringCoefficient.cpp.o
+    [ 58%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/graph/Graph.cpp.o
+    [ 58%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/graph/GraphBuilder.cpp.o
+    [ 58%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/graph/GraphTools.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp: In member function ‘std::__cxx11::string NetworKit::Graph::toString() const’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:501:13: warning: ‘std::__cxx11::string NetworKit::Graph::typ() const’ is deprecated [-Wdeprecated-declarations]
+         strm << typ() << "(name=" << getName() << ", n=" << numberOfNodes() << ", m=" << numberOfEdges()
+                 ^
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:302:13: note: declared here
+     std::string Graph::typ() const {
+                 ^
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:501:17: warning: ‘std::__cxx11::string NetworKit::Graph::typ() const’ is deprecated [-Wdeprecated-declarations]
+         strm << typ() << "(name=" << getName() << ", n=" << numberOfNodes() << ", m=" << numberOfEdges()
+                     ^
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:302:13: note: declared here
+     std::string Graph::typ() const {
+                 ^
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:501:34: warning: ‘std::__cxx11::string NetworKit::Graph::getName() const’ is deprecated [-Wdeprecated-declarations]
+         strm << typ() << "(name=" << getName() << ", n=" << numberOfNodes() << ", m=" << numberOfEdges()
+                                      ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:18:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:1113:32: note: declared here
+         std::string TLX_DEPRECATED(getName() const) { return name; }
+                                    ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:501:42: warning: ‘std::__cxx11::string NetworKit::Graph::getName() const’ is deprecated [-Wdeprecated-declarations]
+         strm << typ() << "(name=" << getName() << ", n=" << numberOfNodes() << ", m=" << numberOfEdges()
+                                              ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/Graph.cpp:18:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:1113:32: note: declared here
+         std::string TLX_DEPRECATED(getName() const) { return name; }
+                                    ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 59%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/graph/KruskalMSF.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/GraphBuilder.cpp: In member function ‘NetworKit::Graph NetworKit::GraphBuilder::toGraph(bool, bool)’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/GraphBuilder.cpp:150:23: warning: ‘void NetworKit::Graph::setName(std::__cxx11::string)’ is deprecated [-Wdeprecated-declarations]
+             G.setName(name);
+                           ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/GraphBuilder.hpp:14,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/graph/GraphBuilder.cpp:11:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:1105:25: note: declared here
+         void TLX_DEPRECATED(setName(std::string name)) { this->name = name; }
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 59%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/graph/RandomMaximumSpanningForest.cpp.o
+    [ 59%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/graph/SpanningForest.cpp.o
+    [ 59%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/graph/UnionMaximumSpanningForest.cpp.o
+    [ 60%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/independentset/IndependentSetFinder.cpp.o
+    [ 60%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/independentset/Luby.cpp.o
+    [ 60%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/BinaryEdgeListPartitionReader.cpp.o
+    [ 61%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/BinaryEdgeListPartitionWriter.cpp.o
+    [ 61%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/BinaryPartitionReader.cpp.o
+    [ 61%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/BinaryPartitionWriter.cpp.o
+    [ 61%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/CoverReader.cpp.o
+    [ 62%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/CoverWriter.cpp.o
+    [ 62%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/DGSReader.cpp.o
+    [ 62%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/DibapGraphReader.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/DGSReader.cpp: In member function ‘virtual void NetworKit::DGSReader::read(std::__cxx11::string, NetworKit::GraphEventProxy&)’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/DGSReader.cpp:54:33: warning: ‘void NetworKit::GraphEventProxy::timeStep()’ is deprecated [-Wdeprecated-declarations]
+                     Gproxy.timeStep();
+                                     ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:11:0,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/DGSReader.cpp:14:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/dynamics/GraphEventProxy.hpp:54:25: note: declared here
+         void TLX_DEPRECATED(timeStep());
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 62%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/DotGraphWriter.cpp.o
+    [ 63%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/DotPartitionWriter.cpp.o
+    [ 63%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/EdgeListCoverReader.cpp.o
+    [ 63%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/EdgeListPartitionReader.cpp.o
+    [ 64%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/EdgeListReader.cpp.o
+    [ 64%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/EdgeListWriter.cpp.o
+    [ 64%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/GMLGraphReader.cpp.o
+    [ 64%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/GMLGraphWriter.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/GMLGraphReader.cpp: In member function ‘virtual NetworKit::Graph NetworKit::GMLGraphReader::read(const string&)’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/GMLGraphReader.cpp:175:24: warning: ‘void NetworKit::Graph::setName(std::__cxx11::string)’ is deprecated [-Wdeprecated-declarations]
+         G.setName(graphName);
+                            ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/io/GraphReader.hpp:14,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/io/GMLGraphReader.hpp:13,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/GMLGraphReader.cpp:17:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:1105:25: note: declared here
+         void TLX_DEPRECATED(setName(std::string name)) { this->name = name; }
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 65%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/GraphIO.cpp.o
+    [ 65%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/GraphToolBinaryReader.cpp.o
+    [ 65%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/GraphToolBinaryWriter.cpp.o
+    [ 66%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/KONECTGraphReader.cpp.o
+    [ 66%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/MemoryMappedFile.cpp.o
+    [ 66%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/METISGraphReader.cpp.o
+    [ 66%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/METISGraphWriter.cpp.o
+    [ 67%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/METISParser.cpp.o
+    [ 67%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/NetworkitBinaryReader.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/METISGraphReader.cpp: In member function ‘virtual NetworKit::Graph NetworKit::METISGraphReader::read(const string&)’:
+    /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/METISGraphReader.cpp:42:24: warning: ‘void NetworKit::GraphBuilder::setName(std::__cxx11::string)’ is deprecated [-Wdeprecated-declarations]
+         b.setName(graphName);
+                            ^
+    In file included from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/Graph.hpp:29:0,
+                     from /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/GraphBuilder.hpp:14,
+                     from /tmp/pip-install-l6mks22t/networkit/networkit/cpp/io/METISGraphReader.cpp:11:
+    /tmp/pip-install-l6mks22t/networkit/include/networkit/graph/GraphBuilder.hpp:92:25: note: declared here
+         void TLX_DEPRECATED(setName(std::string name)) { this->name = name; }
+                             ^
+    /tmp/pip-install-l6mks22t/networkit/extlibs/tlx/tlx/define/deprecated.hpp:26:29: note: in definition of macro ‘TLX_DEPRECATED’
+       #define TLX_DEPRECATED(x) x __attribute__ ((deprecated))
+                                 ^
+    [ 67%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/NetworkitBinaryWriter.cpp.o
+    [ 67%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/MatrixMarketReader.cpp.o
+    [ 68%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/PartitionReader.cpp.o
+    [ 68%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/RasterReader.cpp.o
+    [ 68%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/SNAPEdgeListPartitionReader.cpp.o
+    [ 69%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/SNAPGraphReader.cpp.o
+    [ 69%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/SNAPGraphWriter.cpp.o
+    [ 69%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/ThrillGraphBinaryReader.cpp.o
+    [ 69%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/io/ThrillGraphBinaryWriter.cpp.o
+    [ 70%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/AdamicAdarIndex.cpp.o
+    [ 70%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/AdjustedRandIndex.cpp.o
+    [ 70%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/AlgebraicDistanceIndex.cpp.o
+    [ 70%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/EvaluationMetric.cpp.o
+    [ 71%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/KatzIndex.cpp.o
+    [ 71%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/LinkPredictor.cpp.o
+    [ 71%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/LinkThresholder.cpp.o
+    [ 72%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/MissingLinksFinder.cpp.o
+    [ 72%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/NeighborhoodUtility.cpp.o
+    [ 72%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/PrecisionRecallMetric.cpp.o
+    [ 72%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/PredictionsSorter.cpp.o
+    [ 73%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/ROCMetric.cpp.o
+    [ 73%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/RandomLinkSampler.cpp.o
+    [ 73%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/ResourceAllocationIndex.cpp.o
+    [ 74%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/linkprediction/SameCommunityIndex.cpp.o
+    [ 74%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/matching/LocalMaxMatcher.cpp.o
+    [ 74%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/matching/Matcher.cpp.o
+    [ 74%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/matching/Matching.cpp.o
+    [ 75%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/matching/PathGrowingMatcher.cpp.o
+    [ 75%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/overlap/HashingOverlapper.cpp.o
+    [ 75%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/randomization/Curveball.cpp.o
+    [ 75%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/randomization/CurveballGlobalTradeGenerator.cpp.o
+    [ 76%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/randomization/CurveballImpl.cpp.o
+    [ 76%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/randomization/CurveballUniformTradeGenerator.cpp.o
+    [ 76%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/randomization/DegreePreservingShuffle.cpp.o
+    [ 77%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/randomization/GlobalCurveball.cpp.o
+    [ 77%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/scd/ApproximatePageRank.cpp.o
+    [ 77%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/scd/GCE.cpp.o
+    [ 77%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/scd/PageRankNibble.cpp.o
+    [ 78%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/simulation/EpidemicSimulationSEIR.cpp.o
+    [ 78%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/ChanceCorrectedTriangleScore.cpp.o
+    [ 78%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/ForestFireScore.cpp.o
+    [ 78%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/GlobalThresholdFilter.cpp.o
+    [ 79%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/LocalDegreeScore.cpp.o
+    [ 79%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/LocalSimilarityScore.cpp.o
+    [ 79%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/MultiscaleScore.cpp.o
+    [ 80%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/RandomEdgeScore.cpp.o
+    [ 80%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/RandomNodeEdgeScore.cpp.o
+    [ 80%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/SCANStructuralSimilarityScore.cpp.o
+    [ 80%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/SimmelianOverlapScore.cpp.o
+    [ 81%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/SimmelianScore.cpp.o
+    [ 81%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/sparsification/Sparsifiers.cpp.o
+    [ 81%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/structures/Cover.cpp.o
+    [ 81%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/structures/Partition.cpp.o
+    [ 82%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/structures/UnionFind.cpp.o
+    [ 82%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/viz/MaxentStress.cpp.o
+    [ 82%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/viz/PivotMDS.cpp.o
+    [ 83%] Building CXX object CMakeFiles/networkit.dir/networkit/cpp/viz/PostscriptWriter.cpp.o
+    [ 83%] Linking CXX shared library libnetworkit.so
+    [ 83%] Built target networkit
+    Scanning dependencies of target traversal
+    Scanning dependencies of target viz
+    Scanning dependencies of target structures
+    [ 83%] Building CXX object CMakeFiles/viz.dir/networkit/viz.cpp.o
+    [ 84%] Building CXX object CMakeFiles/traversal.dir/networkit/traversal.cpp.o
+    [ 84%] Building CXX object CMakeFiles/structures.dir/networkit/structures.cpp.o
+    Scanning dependencies of target sparsification
+    /tmp/pip-install-l6mks22t/networkit/networkit/viz.cpp:24:20: fatal error: Python.h: No such file or directory
+    compilation terminated.
+    /tmp/pip-install-l6mks22t/networkit/networkit/structures.cpp:24:20: fatal error: Python.h: No such file or directory
+    compilation terminated.
+    CMakeFiles/viz.dir/build.make:81: recipe for target 'CMakeFiles/viz.dir/networkit/viz.cpp.o' failed
+    make[2]: *** [CMakeFiles/viz.dir/networkit/viz.cpp.o] Error 1
+    /tmp/pip-install-l6mks22t/networkit/networkit/traversal.cpp:24:20: fatal error: Python.h: No such file or directory
+    compilation terminated.
+    CMakeFiles/Makefile2:1423: recipe for target 'CMakeFiles/viz.dir/all' failed
+    make[1]: *** [CMakeFiles/viz.dir/all] Error 2
+    make[1]: *** Waiting for unfinished jobs....
+    CMakeFiles/structures.dir/build.make:81: recipe for target 'CMakeFiles/structures.dir/networkit/structures.cpp.o' failed
+    make[2]: *** [CMakeFiles/structures.dir/networkit/structures.cpp.o] Error 1
+    CMakeFiles/Makefile2:1451: recipe for target 'CMakeFiles/structures.dir/all' failed
+    make[1]: *** [CMakeFiles/structures.dir/all] Error 2
+    CMakeFiles/traversal.dir/build.make:81: recipe for target 'CMakeFiles/traversal.dir/networkit/traversal.cpp.o' failed
+    make[2]: *** [CMakeFiles/traversal.dir/networkit/traversal.cpp.o] Error 1
+    CMakeFiles/Makefile2:1367: recipe for target 'CMakeFiles/traversal.dir/all' failed
+    make[1]: *** [CMakeFiles/traversal.dir/all] Error 2
+    [ 84%] Building CXX object CMakeFiles/sparsification.dir/networkit/sparsification.cpp.o
+    /tmp/pip-install-l6mks22t/networkit/networkit/sparsification.cpp:24:20: fatal error: Python.h: No such file or directory
+    compilation terminated.
+    CMakeFiles/sparsification.dir/build.make:81: recipe for target 'CMakeFiles/sparsification.dir/networkit/sparsification.cpp.o' failed
+    make[2]: *** [CMakeFiles/sparsification.dir/networkit/sparsification.cpp.o] Error 1
+    CMakeFiles/Makefile2:1395: recipe for target 'CMakeFiles/sparsification.dir/all' failed
+    make[1]: *** [CMakeFiles/sparsification.dir/all] Error 2
+    Makefile:148: recipe for target 'all' failed
+    make: *** [all] Error 2
+    Build tool returned an error, exiting setup.py
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-l6mks22t/networkit/setup.py'"'"'; __file__='"'"'/tmp/pip-install-l6mks22t/networkit/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-9sqkfg_9/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/user/.local/include/python3.7m/networkit Check the logs for full command output.
+d
