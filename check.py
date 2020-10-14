@@ -7,8 +7,8 @@ from settings_model import\
     GRAPH_LISP_FILE,\
     GRAPH_SCR_FILE,\
     GRAPH_DWG_FILE,\
-    GRAPH_DXF_FILE
-
+    GRAPH_DXF_FILE,\
+    GRAPH_COMMAND_FILE
 
 def write_src(graph):
     """
@@ -16,13 +16,16 @@ def write_src(graph):
     :param graph:
     :return:
     """
+    with open(GRAPH_COMMAND_FILE, 'w') as outfile:
+    outfile.write(f"{graph}\n")
+
     with open(GRAPH_SCR_FILE, 'w') as outfile:
         outfile.write("open\n" +
                       f"{GRAPH_DWG_FILE}" + "\n"
                       "(setq *LOAD_SECURITY_STATE* (getvar 'SECURELOAD))\n" +
                       '(setvar "SECURELOAD" 0)\n' +
                       rf'(load "{GRAPH_LISP_FILE}")' + "\n"
-                      f"{graph}\n" +
+                      rf'(load "{GRAPH_COMMAND_FILE}")' + "\n"
                       '(setvar "SECURELOAD" *LOAD_SECURITY_STATE*)\n'
                       "saveas dxf 16\n" +
                       rf"{GRAPH_DXF_FILE}" +"\n"+
