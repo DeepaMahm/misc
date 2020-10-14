@@ -17,7 +17,7 @@ def write_src(graph):
     :return:
     """
     with open(GRAPH_COMMAND_FILE, 'w') as outfile:
-    outfile.write(f"{graph}\n")
+        outfile.write(f"{graph}\n")
 
     with open(GRAPH_SCR_FILE, 'w') as outfile:
         outfile.write("open\n" +
