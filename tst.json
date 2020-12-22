@@ -1,7 +1,7 @@
 {
   "EQ1": {
     "parameters": {
-      "P1": {
+      "EQ1_coeff1": {
         "value": 1.0e-06
       },
       "P2": {
@@ -15,7 +15,7 @@
   },
   "EQ2": {
     "parameters": {
-      "K1": {
+      "EQ2_coeff2": {
         "value": 5253
       },
       "K2": {
