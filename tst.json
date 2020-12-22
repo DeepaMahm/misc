@@ -37,6 +37,6 @@
         "value": 0.01
       }
     },
-    "formula": "(EQ2_coeff2 *((var2*var3)/(K1*K2))* ((1 dimensionless - ((var3*var4)/(var2))/K6) / ((1 dimensionless + var1/K1)*(1 dimensionless + var2)+ 1 dimensionless)))*(1 dimensionless/(1 dimensionless + var5/K7))"
+    "expression": "(EQ2_coeff2 *((var2*var3)/(K1*K2))* ((1 dimensionless - ((var3*var4)/(var2))/K6) / ((1 dimensionless + var1/K1)*(1 dimensionless + var2)+ 1 dimensionless)))*(1 dimensionless/(1 dimensionless + var5/K7))"
   }
 }
