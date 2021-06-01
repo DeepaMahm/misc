@@ -1,0 +1,254 @@
+Starting Julia...
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.6.1 (2021-04-23)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+signal (11): Segmentation fault
+in expression starting at /home/deepa/speedup/mesentery.jl:39
+apply_cl at /buildworker/worker/package_linux64/build/src/flisp/flisp.c:1057
+do_trycatch at /buildworker/worker/package_linux64/build/src/flisp/flisp.c:907
+apply_cl at /buildworker/worker/package_linux64/build/src/flisp/flisp.c:1810
+_applyn at /buildworker/worker/package_linux64/build/src/flisp/flisp.c:685
+fl_applyn at /buildworker/worker/package_linux64/build/src/flisp/flisp.c:725
+jl_call_scm_on_ast_and_loc at /buildworker/worker/package_linux64/build/src/ast.c:882 [inlined]
+jl_expand_in_world at /buildworker/worker/package_linux64/build/src/ast.c:1152
+jl_expand_and_resolve at /buildworker/worker/package_linux64/build/src/method.c:407
+jl_code_for_staged at /buildworker/worker/package_linux64/build/src/method.c:449
+get_staged at ./compiler/utilities.jl:111
+retrieve_code_info at ./compiler/utilities.jl:122 [inlined]
+InferenceState at ./compiler/inferencestate.jl:131
+typeinf_edge at ./compiler/typeinfer.jl:797
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_apply at ./compiler/abstractinterpretation.jl:738
+abstract_call_known at ./compiler/abstractinterpretation.jl:952
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call at ./compiler/abstractinterpretation.jl:1054
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call at ./compiler/abstractinterpretation.jl:1054
+abstract_apply at ./compiler/abstractinterpretation.jl:738
+abstract_call_known at ./compiler/abstractinterpretation.jl:952
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call at ./compiler/abstractinterpretation.jl:1054
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_apply at ./compiler/abstractinterpretation.jl:738
+abstract_call_known at ./compiler/abstractinterpretation.jl:952
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_apply at ./compiler/abstractinterpretation.jl:738
+abstract_call_known at ./compiler/abstractinterpretation.jl:952
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_edge at ./compiler/typeinfer.jl:806
+abstract_call_method at ./compiler/abstractinterpretation.jl:490
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:143
+abstract_call_known at ./compiler/abstractinterpretation.jl:1033
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_apply at ./compiler/abstractinterpretation.jl:738
+abstract_call_known at ./compiler/abstractinterpretation.jl:952
+abstract_call at ./compiler/abstractinterpretation.jl:1056
+abstract_call at ./compiler/abstractinterpretation.jl:1040
+abstract_eval_statement at ./compiler/abstractinterpretation.jl:1167
+typeinf_local at ./compiler/abstractinterpretation.jl:1462
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1520
+_typeinf at ./compiler/typeinfer.jl:214
+typeinf at ./compiler/typeinfer.jl:209
+typeinf_ext at ./compiler/typeinfer.jl:892
+typeinf_ext_toplevel at ./compiler/typeinfer.jl:925
+typeinf_ext_toplevel at ./compiler/typeinfer.jl:921
+jfptr_typeinf_ext_toplevel_10816 at /home/deepa/julia-1.6.1/lib/julia/sys.so (unknown line)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+jl_type_infer at /buildworker/worker/package_linux64/build/src/gf.c:298
+jl_generate_fptr at /buildworker/worker/package_linux64/build/src/jitlayers.cpp:340
+jl_compile_method_internal at /buildworker/worker/package_linux64/build/src/gf.c:1970
+jl_compile_method_internal at /buildworker/worker/package_linux64/build/src/gf.c:2236 [inlined]
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2229 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+#solve_up#58 at /home/deepa/.julia/packages/DiffEqBase/lULzQ/src/solve.jl:82
+solve_up at /home/deepa/.julia/packages/DiffEqBase/lULzQ/src/solve.jl:75 [inlined]
+#solve#57 at /home/deepa/.julia/packages/DiffEqBase/lULzQ/src/solve.jl:70 [inlined]
+solve at /home/deepa/.julia/packages/DiffEqBase/lULzQ/src/solve.jl:68
+unknown function (ip: 0x7f039ef44c34)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+##core#266 at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:479
+##sample#267 at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:485
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+#_run#41 at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:98
+_run##kw at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:92
+unknown function (ip: 0x7f039ef3e66a)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+jl_f__call_latest at /buildworker/worker/package_linux64/build/src/builtins.c:714
+#invokelatest#2 at ./essentials.jl:710 [inlined]
+invokelatest##kw at ./essentials.jl:706 [inlined]
+#run_result#38 at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:33 [inlined]
+run_result##kw at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:33 [inlined]
+#run#42 at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:116
+run##kw at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:116 [inlined]
+run##kw at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:116 [inlined]
+#warmup#47 at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:168 [inlined]
+warmup at /home/deepa/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:168
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:115
+eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:204
+eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:155 [inlined]
+eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:562
+jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:670
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:877
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:825
+jl_toplevel_eval_in at /buildworker/worker/package_linux64/build/src/toplevel.c:929
+eval at ./boot.jl:360 [inlined]
+include_string at ./loading.jl:1094
+include_string at ./loading.jl:1104 [inlined]
+#216 at /home/deepa/.julia/packages/Atom/5NgzM/src/eval.jl:176
+withpath at /home/deepa/.julia/packages/CodeTools/VsjEq/src/utils.jl:30
+unknown function (ip: 0x7f04281948b3)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+withpath at /home/deepa/.julia/packages/Atom/5NgzM/src/eval.jl:9
+#215 at /home/deepa/.julia/packages/Atom/5NgzM/src/eval.jl:173
+unknown function (ip: 0x7f042819409c)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+with_logstate at ./logging.jl:491
+with_logger at ./logging.jl:603 [inlined]
+#214 at /home/deepa/.julia/packages/Atom/5NgzM/src/eval.jl:172 [inlined]
+hideprompt at /home/deepa/.julia/packages/Atom/5NgzM/src/repl.jl:127
+macro expansion at /home/deepa/.julia/packages/Media/ItEPc/src/dynamic.jl:24 [inlined]
+evalall at /home/deepa/.julia/packages/Atom/5NgzM/src/eval.jl:162
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+jl_f__call_latest at /buildworker/worker/package_linux64/build/src/builtins.c:714
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+do_apply at /buildworker/worker/package_linux64/build/src/builtins.c:670
+#invokelatest#2 at ./essentials.jl:708
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+do_apply at /buildworker/worker/package_linux64/build/src/builtins.c:670
+invokelatest at ./essentials.jl:706
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+do_apply at /buildworker/worker/package_linux64/build/src/builtins.c:670
+macro expansion at /home/deepa/.julia/packages/Atom/5NgzM/src/eval.jl:41 [inlined]
+#184 at ./task.jl:411
+unknown function (ip: 0x7f04280d93fc)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+start_task at /buildworker/worker/package_linux64/build/src/task.c:839
+unknown function (ip: (nil))
+Allocations: 1063634238 (Pool: 1063609084; Big: 25154); GC: 181
