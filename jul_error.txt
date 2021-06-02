@@ -1,0 +1,32 @@
+LoadError: MethodError: no method matching init(::ODEFunction{true, typeof(fun), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, SparseArrays.SparseMatrixCSC{Bool, Int64}, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing}, ::QNDF{5, 0, true, DefaultLinSolve, NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}}, DataType, Nothing, Nothing, NTuple{5, Float64}})
+Closest candidates are:
+  init(::PDEProblem, ::SciMLBase.DEAlgorithm, ::Any...; kwargs...) at /home/deepa/.julia/packages/DiffEqBase/lULzQ/src/solve.jl:133
+  init(::SciMLBase.DEProblem, ::Any...; kwargs...) at /home/deepa/.julia/packages/DiffEqBase/lULzQ/src/solve.jl:32
+Stacktrace:
+  [1] solve(::Function, ::Vararg{Any, N} where N; kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+    @ CommonSolve ~/.julia/packages/CommonSolve/alZRX/src/CommonSolve.jl:3
+  [2] solve(::Function, ::QNDF{5, 0, true, DefaultLinSolve, NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}}, DataType, Nothing, Nothing, NTuple{5, Float64}})
+    @ CommonSolve ~/.julia/packages/CommonSolve/alZRX/src/CommonSolve.jl:3
+  [3] var"##core#263"()
+    @ Main ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:479
+  [4] var"##sample#264"(__params::BenchmarkTools.Parameters)
+    @ Main ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:485
+  [5] _run(b::BenchmarkTools.Benchmark, p::BenchmarkTools.Parameters; verbose::Bool, pad::String, kwargs::Base.Iterators.Pairs{Symbol, Integer, NTuple{4, Symbol}, NamedTuple{(:samples, :evals, :gctrial, :gcsample), Tuple{Int64, Int64, Bool, Bool}}})
+    @ BenchmarkTools ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:98
+  [6] #invokelatest#2
+    @ ./essentials.jl:710 [inlined]
+  [7] #run_result#38
+    @ ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:33 [inlined]
+  [8] run(b::BenchmarkTools.Benchmark, p::BenchmarkTools.Parameters; progressid::Nothing, nleaves::Float64, ndone::Float64, kwargs::Base.Iterators.Pairs{Symbol, Integer, NTuple{5, Symbol}, NamedTuple{(:verbose, :samples, :evals, :gctrial, :gcsample), Tuple{Bool, Int64, Int64, Bool, Bool}}})
+    @ BenchmarkTools ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:116
+  [9] #warmup#47
+    @ ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:168 [inlined]
+ [10] warmup(item::BenchmarkTools.Benchmark)
+    @ BenchmarkTools ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:168
+ [11] top-level scope
+    @ ~/.julia/packages/BenchmarkTools/MPPDO/src/execution.jl:565
+ [12] eval
+    @ ./boot.jl:360 [inlined]
+ [13] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:1094
+in expression starting at /home/deepa/speedup/julia_test24.jl:29
