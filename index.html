@@ -1,0 +1,37 @@
+<head>
+    <title>Tutorial 1: Getting Started</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.7.10/cytoscape.js"></script>
+</head>
+<style>
+   #cy {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+</style>
+<body>
+    <div id="cy"></div>
+    <script>
+        $.getJSON("input.js", function (data) {
+        var cy = cytoscape({
+        elements: data,
+        container: document.getElementById('cy'),
+        style: [
+        {
+         selector: 'node',
+         style: {
+            shape: 'hexagon',
+            'background-color': 'red',
+            label: 'data(id)'
+        }
+        }],
+    layout: {
+    name: 'grid'
+    },
+    });
+    });
+
+    </script>
+</body>
