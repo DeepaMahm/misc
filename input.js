@@ -1,4 +1,4 @@
-const data = {
+{
     nodes: [
     { data: { id: 'a' } },
     { data: { id: 'b' } },
