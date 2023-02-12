@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <script src="https://cdn.plot.ly/plotly-1.58.5.min.js"></script>
+    <style>
+      .graph-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-panel {
+        width: 70%;
+        float: left;
+      }
+
+      .side-panel {
+        width: 30%;
+        background-color: lightgray;
+        min-height: 300px;
+        overflow: auto;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="graph-container">
+      <div id="myDiv" class="main-panel"></div>
+      <div id="lineGraph" class="side-panel"></div>
+    </div>
+    <script>
+      var nodes = [
+        { x: 0, y: 0, z: 0, value: [1, 2, 3] },
+        { x: 1, y: 1, z: 1, value: [4, 5, 6] },
+        { x: 2, y: 0, z: 2, value: [7, 8, 9] },
+        { x: 3, y: 1, z: 3, value: [10, 11, 12] },
+        { x: 4, y: 0, z: 4, value: [13, 14, 15] }
+      ];
+
+      var edges = [
+        { source: 0, target: 1 },
+        { source: 1, target: 2 },
+        { source: 2, target: 3 },
+        { source: 3, target: 4 }
+      ];
+
+      var x = [];
+      var y = [];
+      var z = [];
+
+      for (var i = 0; i < nodes.length; i++) {
+        x.push(nodes[i].x);
+        y.push(nodes[i].y);
+        z.push(nodes[i].z);
+      }
+
+      const edge_x  = [];
+      const edge_y  = [];
+      const edge_z  = [];
+
+      for (var i = 0; i < edges.length; i++) {
+        const a = nodes[edges[i].source];
+        const b = nodes[edges[i].target];
+        edge_x.push(a.x, b.x, null);
+        edge_y.push(a.y, b.y, null);
+        edge_z.push(a.z, b.z, null);
+      }
+
+      var traceNodes = {
+        x: x, y: y, z: z,
+        mode: 'markers',
+        marker: { size: 12, color: 'red' },
+        // marker: { size: 12, color: Array.from({length: nodes.length}, () => 'red') },
+        text: [0, 1, 2, 3, 4],
+        hoverinfo: 'text',
+        hoverlabel: {
+          bgcolor: 'white'
+        },
+        customdata: nodes.map(function(node) {
+            if (node.value !== undefined)
+               return node.value;
+        }),
+        type: 'scatter3d'
+      };
+
+      var traceEdges = {
+        x: edge_x,
+        y: edge_y,
+        z: edge_z,
+        type: 'scatter3d',
+        mode: 'lines',
+        line: { color: 'red', width: 2, arrow: {size: 50, color: 'black', end:1}},
+        opacity: 0.8
+      };
+
+      var layout = {
+        margin: { l: 0, r: 0, b: 0, t: 0 }
+      };
+
+      Plotly.newPlot('myDiv', [traceNodes, traceEdges], layout, { displayModeBar: false });
+
+      // max y value for the line plot
+      const ymax = Math.max(...nodes.map(n => n.value).flat());
+
+      document.getElementById('myDiv').on('plotly_click', function(data){
+      var nodeIndex = data.points[0].pointNumber;
+      var values = nodes[nodeIndex].value;
+
+      // Change color of the selected node
+      // traceNodes.marker.color = Array.from({length: nodes.length}, (_, i) => i === nodeIndex ? 'blue' : 'red');
+      /*Plotly.update('myDiv', {
+        marker: {
+            color: traceNodes.marker.color
+        }
+      }, [0]);*/
+      //change the color of the clicked node to blue and when clicked on another node, change the color of the previous node to red
+      var update = {
+        marker: { color: Array.from({length: nodes.length}, () => 'red') }
+      };
+      update.marker.color[nodeIndex] = 'blue';
+
+      setTimeout(function() {
+        Plotly.restyle('myDiv', update);
+      }, 50);
+
+
+
+      Plotly.newPlot('lineGraph', [{
+          type: 'scatter',
+          mode: 'lines',
+          x: [0, 1, 2],
+          y: values
+      }], {
+          margin: { t: 0 },
+          yaxis: {autorange: false, range: [0, ymax + 1]}
+      });
+      });
+    </script>
+   </body>
+</html>
